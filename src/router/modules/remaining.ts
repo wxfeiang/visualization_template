@@ -26,5 +26,15 @@ export default [
         component: () => import("@/layout/redirect.vue")
       }
     ]
+  },
+  {
+    path: "/visualization",
+    name: "visualization",
+    component: () => import("@/views/visualization/index.vue"),
+    meta: {
+      title: "大屏显示",
+      showLink: true,
+      rank: 103
+    }
   }
 ] satisfies Array<RouteConfigsTable>;
